@@ -22,7 +22,7 @@ client.on('message', message => {
         for(let index of data) {
             let ma = new RegExp(index, "i");
             if(message.content.match(ma)) {
-                message.channel.send("Please be respectful or you might get banned").message.delete();
+                message.channel.send("Please be respectful or you might get banned");
                 setTimeout(() => {
                     message.delete();
                 }, 3000);
