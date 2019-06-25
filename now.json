@@ -1,6 +1,6 @@
 {
   "vsersion": 1,
 "builds": [
-    { "src": "index.js", "use": "@now/node" },
+    { "src": "index.js", "use": "@now/node" }
   ]
 }
