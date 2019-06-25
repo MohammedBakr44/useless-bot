@@ -38,7 +38,7 @@ client.on('message', message => {
             
             member.kick().then((member) => {
                 message.channel.send(`:wave: ${member.displayName} has been kicked`, {
-                    files: ['https://media.giphy.com/media/UQaRUOLveyjNC/giphy.gif']
+                    files: ['https://media.giphy.com/media/7DzlajZNY5D0I/giphy.gif']
                 });
             }).catch(() => {
                 message.channel.send("Error ugh!");
