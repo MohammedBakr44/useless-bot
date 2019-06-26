@@ -1,5 +1,5 @@
 const Discord = require('discord.js');
-const { prefix, token } = require('./config.json'); //prefix is the sympol you right before the command for example !play in rythm I can't show you the file as it's contain my token :D
+const { prefix, token } = require('./config.json'); //prefix is the sympol you type before the command for example !play in rythm I can't show you the file as it's contain my token :D
 const client = new Discord.Client();
 const { restrictedWords } = require('./wordList.json');
 
