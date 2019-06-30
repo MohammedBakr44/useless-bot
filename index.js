@@ -70,8 +70,10 @@ client.on('message', message => {
             if (message.content.match(ma)) {
                 exampleEmbed.setColor('#bc0000');
                 exampleEmbed.setDescription("Please be respectful or you might get banned");
-                exampleEmbed.setThumbnail('https://media.giphy.com/media/QGzPdYCcBbbZm/giphy.gif')
                 message.channel.send(exampleEmbed);
+                message.channel.send('', {
+                   files: ['https://media.giphy.com/media/QGzPdYCcBbbZm/giphy.gif']
+                })
                 setTimeout(() => {
                         message.delete();
                 }, 3000);
