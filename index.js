@@ -79,7 +79,7 @@ client.on('message', message => {
     //     }
     // }
     // checks if the message from the bot itself
-    } // filter the messages
+    // } filter the messages
     
     if (message.content.includes('بلحة')) {
         message.channel.send("اسمه الرئيس المشير عبدالفتاح السيسي يا عدو الوطن ");
