@@ -51,7 +51,23 @@ client.on('message', message => {
     }
 
     
-
+    
+    // const exampleEmbed = new Discord.RichEmbed().setTitle('Warning');
+    // if (!message.author.bot)  {
+    //     restrictedWords.map(word => {
+    //         let ma = new RegExp(word, "i");
+    //         if (message.content.match(ma)) {
+    //             exampleEmbed.setColor('#bc0000');
+    //             exampleEmbed.setDescription("Please be respectful or you might get banned");
+    //             message.channel.send(exampleEmbed);
+    //             message.channel.send('', {
+    //                files: ['https://media.giphy.com/media/QGzPdYCcBbbZm/giphy.gif']
+    //             })
+    //             setTimeout(() => {
+    //                     message.delete();
+    //             }, 3000);
+    //         }
+    //     })
 
     // for (let index of data) {
     //     let ma = new RegExp(index, "i");
@@ -63,22 +79,6 @@ client.on('message', message => {
     //     }
     // }
     // checks if the message from the bot itself
-    const exampleEmbed = new Discord.RichEmbed().setTitle('Warning');
-    if (!message.author.bot)  {
-        restrictedWords.map(word => {
-            let ma = new RegExp(word, "i");
-            if (message.content.match(ma)) {
-                exampleEmbed.setColor('#bc0000');
-                exampleEmbed.setDescription("Please be respectful or you might get banned");
-                message.channel.send(exampleEmbed);
-                message.channel.send('', {
-                   files: ['https://media.giphy.com/media/QGzPdYCcBbbZm/giphy.gif']
-                })
-                setTimeout(() => {
-                        message.delete();
-                }, 3000);
-            }
-        })
     } // filter the messages
     
     if (message.content.includes('بلحة')) {
