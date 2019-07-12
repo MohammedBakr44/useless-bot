@@ -50,6 +50,10 @@ client.on('message', message => {
         message.channel.send('Do u do u');
     }
 
+    if (message.content.match(/Sasageyo/i) || message.content === "سوساجيو") {
+        message.channel.send("Shinzou wo Sasageyo");
+    }
+
     
     
     // const exampleEmbed = new Discord.RichEmbed().setTitle('Warning');
