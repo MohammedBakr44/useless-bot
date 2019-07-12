@@ -61,10 +61,12 @@ client.on('message', message => {
 
 
         if (message.content.match(/Sasageyo/i)) {
-            message.channel.send(`Sasageyo! sasageyo! shinzou wo sasageyo!
-                                  Subete no gisei wa ima kono toki no tame ni
-                                  Sasageyo! sasageyo! shinzou wo sasageyo!
-                                  Susumu beki mirai wo sono te de kirihirake`);
+            message.channel.send(
+            `Sasageyo! sasageyo! shinzou wo sasageyo!
+            Subete no gisei wa ima kono toki no tame ni
+            Sasageyo! sasageyo! shinzou wo sasageyo!
+            Susumu beki mirai wo sono te de kirihirake`
+            );
         }
 
 
