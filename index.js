@@ -44,14 +44,14 @@ client.on('message', message => {
         });
     }
 
+    if (message.content.match(/Sasageyo/i)) {
+        message.channel.send("Shinzou wo Sasageyo");
+    }
+
     if (message.content.match(/Do u love me/i) || 
         message.content.match(/Do u want me/i) || 
         message.content.match(/Do u need me/i)) {
         message.channel.send('Do u do u');
-    }
-
-    if (message.content.match(/Sasageyo/i) || message.content === "سوساجيو") {
-        message.channel.send("Shinzou wo Sasageyo");
     }
 
     
