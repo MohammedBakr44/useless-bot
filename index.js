@@ -65,6 +65,10 @@ client.on('message', message => {
             (`Sasageyo! sasageyo! shinzou wo sasageyo!\nSubete no gisei wa ima kono toki no tame ni\nSasageyo! sasageyo! shinzou wo sasageyo!\nSusumu beki mirai wo sono te de kirihirake`);
         }
 
+        if (message.content.startsWith(`${prefix}shrug`)) {
+            message.channel.send('( ͡° ͜ʖ ͡°)')
+        }
+
 
     }
 
