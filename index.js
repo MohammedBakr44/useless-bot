@@ -74,10 +74,15 @@ client.on('message', message => {
         }
 
         if(message.content.startsWith(`${prefix}howGay`)) {
-            const exampleEmbed = new Discord.RichEmbed().setTitle('Warning');
-            let random = Math.floor(Math.random() * 100)
+
+            const exampleEmbed = new Discord.RichEmbed().setTitle('gat gay method');
+
+            let random = Math.floor(Math.random() * 100);
+
             exampleEmbed.setColor('#bc0000');
-            exampleEmbed.setDescription(`${member} is ${random}% gay :gay_pride_flag:`);
+
+            exampleEmbed.setDescription(`${member.displayName} is ${random}% gay :gay_pride_flag:`);
+
             message.channel.send(exampleEmbed);
         }
     //     if (message.content.match(ma)) {
