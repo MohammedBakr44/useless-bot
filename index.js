@@ -8,6 +8,14 @@ const {
     restrictedWords
 } = require('./wordList.json');
 
+const lenny = {
+                booty: "( ͡° ͜ʖ ͡°)", 
+                killYa: "( ͡° ͜ʖ ͡°)︻̷┻̿═━一-",
+                joy: "(☭ ͜ʖ ☭)",
+                amazed: "(⟃ ͜ʖ ⟄)",
+                money: "[̲̅$̲̅(̲̅☭ ͜ʖ ☭)̲̅$̲̅]",
+                booty2: "凸( ͡° ͜ʖ ͡°)"}
+
 const http = require('http');
 
 http.createServer((req, res) => {
@@ -65,12 +73,18 @@ client.on('message', message => {
             (`Sasageyo! sasageyo! shinzou wo sasageyo!\nSubete no gisei wa ima kono toki no tame ni\nSasageyo! sasageyo! shinzou wo sasageyo!\nSusumu beki mirai wo sono te de kirihirake`);
         }
 
-        if (message.content.startsWith(`${prefix}shrug`)) {
-            message.channel.send('( ͡° ͜ʖ ͡°)')
+        if(message.content.startsWith(`${prefix}howGay`)) {
+            const exampleEmbed = new Discord.RichEmbed().setTitle('Warning');
+            let random = Math.floor(Math.random() * 100)
+            exampleEmbed.setColor('#bc0000');
+            exampleEmbed.setDescription(`${member} is ${random}% gay :gay_pride_flag:`);
+            message.channel.send(exampleEmbed);
         }
-
-
-    }
+    //     if (message.content.match(ma)) {
+    //         exampleEmbed.setColor('#bc0000');
+    //         exampleEmbed.setDescription(`Use followning commands to add a lenny face`);
+    //         message.channel.send(exampleEmbed);
+    // }
 
     // const exampleEmbed = new Discord.RichEmbed().setTitle('Warning');
     // if (!message.author.bot)  {
@@ -117,5 +131,6 @@ client.on('message', message => {
             });
         };
     };
+}
 });
 client.login(token);
