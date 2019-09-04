@@ -129,6 +129,10 @@ client.on('message', message => {
         message.channel.send('Do u do u');
     }
 
+    if(message.content.match(/i love you/i)) {
+        message.channel.send('I love you too, My friend.');
+    }
+
     
 
 
