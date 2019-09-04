@@ -133,7 +133,6 @@ client.on('message', message => {
         message.channel.send('I love you too, My friend.');
     }
 
-    
 
 
     // for (let index of data) {
