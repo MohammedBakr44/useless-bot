@@ -12,10 +12,6 @@ const {
     token
 } = require('./config.json'); //Prefix is the sympol you type before the command for example !play in rythm I can't show you the file as it's contain my token :D
 const client = new Discord.Client();
-const {
-    restrictedWords
-} = require('./wordList.json');
-
 const http = require('http');
 
 http.createServer((req, res) => {
