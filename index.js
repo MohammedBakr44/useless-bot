@@ -1,12 +1,5 @@
 const Discord = require('discord.js');
-const lenny = {
-    booty: "( ͡° ͜ʖ ͡°)",
-    killYa: "( ͡° ͜ʖ ͡°)︻̷┻̿═━一-",
-    joy: "(☭ ͜ʖ ☭)",
-    amazed: "(⟃ ͜ʖ ⟄)",
-    money: "[̲̅$̲̅(̲̅☭ ͜ʖ ☭)̲̅$̲̅]",
-    booty2: "凸( ͡° ͜ʖ ͡°)"
-}
+const lenny = "( ͡° ͜ʖ ͡°)";
 const {
     prefix,
     token
@@ -85,6 +78,8 @@ client.on('message', message => {
 
             message.channel.send(exampleEmbed);
         }
+
+        if (message.content.startsWith(`${prefix}lenny`)) message.channel.send(lenny);
         //     if (message.content.match(ma)) {
         //         exampleEmbed.setColor('#bc0000');
         //         exampleEmbed.setDescription(`Use followning commands to add a lenny face`);
