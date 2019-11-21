@@ -87,7 +87,7 @@ client.on('message', message => {
         // }
 
         if (message.content.match(/i love you/i)) {
-            message.channel.send('I love you too, My friend.');
+            message.channel.send('I love you too, My friend. :heart:');
         }
 
 
