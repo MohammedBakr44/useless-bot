@@ -86,7 +86,7 @@ client.on('message', message => {
         //         message.channel.send(exampleEmbed);
         // }
 
-        if (message.content.match(/i love you/i) &&  message.mentions.members.first() ==  bot) {
+        if (message.content.match(/i love you/i)) {
             message.channel.send('I love you too, My friend.');
         }
 
