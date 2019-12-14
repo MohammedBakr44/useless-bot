@@ -91,6 +91,8 @@ client.on("message", message => {
             source.setColor('#bc000')
             .setDescription(`With great power comes great responsibility, I give my legacy save it even if it costs your life.\n
             https://github.com/MohammedBakr44/useless-bot`);
+
+            message.channel.send(source);
         }
 
         if (message.content.startsWith(`${prefix}lenny`)) {
