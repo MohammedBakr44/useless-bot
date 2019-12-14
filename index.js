@@ -68,8 +68,7 @@ client.on("message", message => {
 
         if (message.content.startsWith(`${prefix}howGay`)) {
             const exampleEmbed = new Discord.RichEmbed().setTitle(
-                "gat gay method"
-            );
+                "gat gay method");
 
             let random = Math.floor(Math.random() * 100);
 
@@ -78,6 +77,12 @@ client.on("message", message => {
             exampleEmbed.setDescription(
                 `${member.displayName} is ${random}% gay :gay_pride_flag:`
             );
+
+            if(random <= 50) {
+                exampleEmbed.setImage('https://i.imgur.com/5uqCqPw.png');
+            } else {
+                exampleEmbed.setImage('https://i.imgflip.com/2ujqgy.jpg');
+            }
 
             message.channel.send(exampleEmbed);
         }
