@@ -72,9 +72,8 @@ client.on("message", message => {
 
             let random = Math.floor(Math.random() * 100);
 
-            exampleEmbed.setColor("#bc0000");
-
-            exampleEmbed.setDescription(
+            exampleEmbed.setColor("#bc0000")
+            .setDescription(
                 `${member.displayName} is ${random}% gay :gay_pride_flag:`
             );
 
