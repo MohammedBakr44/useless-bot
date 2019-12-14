@@ -88,7 +88,7 @@ client.on("message", message => {
 
         if(message.content.startsWith(`${prefix}source`)) {
             const source = new Discord.RichEmbed().setTitle("Bot source");
-            source.setColor('#bc0000')
+            source.setColor('#8e44ad')
             .setDescription(`With great power comes great responsibility, I give my legacy save it even if it costs your life.\n
             https://github.com/MohammedBakr44/useless-bot`);
 
