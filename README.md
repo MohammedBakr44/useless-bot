@@ -34,7 +34,7 @@ The bot replies: `Do u do u`
 
 `sAsAgEyO`
 
-* You can write the word in any format even if you used _.sarcastice_ method with it, that's because we use the most modern regular expression technologies to process the text
+* You can write the word in any format even if you used _.sarcastice_ method with it, that's because we use the most modern regular expression technologies to process the text.
 
 The bot replies: `Sasageyo! sasageyo! shinzou wo sasageyo! Subete no gisei wa ima kono toki no tame ni Sasageyo! sasageyo! shinzou wo sasageyo! Susumu beki mirai wo sono te de kirihirake`
 
