@@ -86,6 +86,13 @@ client.on("message", message => {
             message.channel.send(exampleEmbed);
         }
 
+        if(message.content.startsWith(`${prefix}source`)) {
+            const source = new Discord.RichEmbed().setTitle("Bot source");
+            source.setColor('#bc000')
+            .setDescription(`With great power comes great responsibility, I give my legacy save it even if it costs your life.\n
+            https://github.com/MohammedBakr44/useless-bot`);
+        }
+
         if (message.content.startsWith(`${prefix}lenny`)) {
             message.delete();
             message.channel.send(lenny);
