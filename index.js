@@ -60,7 +60,7 @@ client.on("message", message => {
             message.channel.send("Do u do u");
         }
 
-        if (message.content.match(/Sasageyo/i)) {
+        if (message.content.match(/Sasageyo/i) || message.content.match("ささげよ")) {
             message.channel.send(
                 `Sasageyo! sasageyo! shinzou wo sasageyo!\nSubete no gisei wa ima kono toki no tame ni\nSasageyo! sasageyo! shinzou wo sasageyo!\nSusumu beki mirai wo sono te de kirihirake`
             );
