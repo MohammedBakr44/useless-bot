@@ -11,11 +11,19 @@ Create a wave for any member of your server.
 ### Example
     `!sayHello @useless bot`
 
+## Let's get to the dirty stuff ( ͡° ͜ʖ ͡°)
+
+As described in da description the bot removes the rude word(or racist) just anything you don't want it to be present in your server. <br> English ↗.
+
+### How?
+Using latest technology we can identify any word you add to the json file `wordList.json`.
+All you have to do is adding the restricted words to the `restrictedWords` object, separated by `,` and surrounded with `""` or `''`. Just that when ever the word is present in your server the bot will send a small warning and then delete the message contains the restricted word.
+
 ## Get gay method
 
 * `!howGay ${Username}`
 
-Generates a *random* number for how gay is the mentioned user, **for fun**.
+Generates a *random* number with a meme for how gay is the mentioned user, **for fun**.
 
 ### Example
     `!howGay @useless bot`
@@ -40,7 +48,10 @@ The bot replies: `Sasageyo! sasageyo! shinzou wo sasageyo! Subete no gisei wa im
 
 This for you anime fans :D.
 
+## More features
+
+* I'm adding more features to this bot, after all it's created for fun. so check the code for those more features.
 
 ## Change settings
 
-You'll find a file called _config.json_ you can edit it with your token and prefix-default is !-. I will not explain what is the prefix, google is free.
+You'll find a file called _config.json_ you can edit it with your token and prefix-default is !. I will not explain what is the prefix, google is free.
