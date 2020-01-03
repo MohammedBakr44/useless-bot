@@ -66,6 +66,22 @@ client.on("message", message => {
             );
         }
 
+        if (message.content.match(/yes/i)) {
+            message.channel.send("No.");
+        }
+
+        if (
+            message.content.match(/i did it/i) ||
+            message.content.match(/victory/i) ||
+            message.content.match(/done/i)
+        ) {
+            message.channel.send("GG homie.");
+        }
+
+        if (message.content.search(/crush/i) != -1) {
+            message.channel.send("Get back to your work.");
+        }
+
         if (message.content.startsWith(`${prefix}howGay`)) {
             const exampleEmbed = new Discord.RichEmbed().setTitle(
                 "gat gay method");
@@ -73,11 +89,11 @@ client.on("message", message => {
             let random = Math.floor(Math.random() * 100);
 
             exampleEmbed.setColor("#bc0000")
-            .setDescription(
-                `${member.displayName} is ${random}% gay :gay_pride_flag:`
-            );
+                .setDescription(
+                    `${member.displayName} is ${random}% gay :gay_pride_flag:`
+                );
 
-            if(random <= 50) {
+            if (random <= 50) {
                 exampleEmbed.setImage('https://i.imgur.com/5uqCqPw.png');
             } else {
                 exampleEmbed.setImage('https://i.imgflip.com/2ujqgy.jpg');
@@ -86,10 +102,10 @@ client.on("message", message => {
             message.channel.send(exampleEmbed);
         }
 
-        if(message.content.startsWith(`${prefix}source`)) {
+        if (message.content.startsWith(`${prefix}source`)) {
             const source = new Discord.RichEmbed().setTitle("Bot source");
             source.setColor('#8e44ad')
-            .setDescription(`With great power comes great responsibility, I give my legacy save it even if it costs your life.\n
+                .setDescription(`With great power comes great responsibility, I give my legacy save it even if it costs your life.\n
             https://github.com/MohammedBakr44/useless-bot`);
 
             message.channel.send(source);
@@ -134,45 +150,44 @@ client.on("message", message => {
             }
         }
 
-        // for (let index of data) {
-        //     let ma = new RegExp(index, "i");
-        //     if (message.content.match(ma)) {
-        //         message.channel.send("Please be respectful or you might get banned");
-        //         setTimeout(() => {
-        //             message.delete();
-        //         }, 3000);
-        //     }
-        // }
+        for (let index of data) {
+            let ma = new RegExp(index, "i");
+            if (message.content.match(ma)) {
+                message.channel.send("Please be respectful or you might get banned");
+                setTimeout(() => {
+                    message.delete();
+                }, 3000);
+            }
+        }
         // checks if the message from the bot itself
-        // const exampleEmbed = new Discord.RichEmbed().setTitle('Warning');
-        // if (!message.author.bot)  {
-        //     restrictedWords.map(word => {
-        //         let ma = new RegExp(word, "i");
-        //         if (message.content.match(ma)) {
-        //             exampleEmbed.setColor('#bc0000');
-        //             exampleEmbed.setDescription("Please be respectful or you might get banned");
-        //             message.channel.send(exampleEmbed);
-        //             message.channel.send('', {
-        //                files: ['https://media.giphy.com/media/QGzPdYCcBbbZm/giphy.gif']
-        //             })
-        //             setTimeout(() => {
-        //                     message.delete();
-        //             }, 3000);
-        //         }
-        //     })
+        const exampleEmbed = new Discord.RichEmbed().setTitle('Warning');
+        if (!message.author.bot) {
+            restrictedWords.map(word => {
+                let ma = new RegExp(word, "i");
+                if (message.content.match(ma)) {
+                    exampleEmbed.setColor('#bc0000');
+                    exampleEmbed.setDescription("Please be respectful or you might get banned");
+                    message.channel.send(exampleEmbed);
+                    message.channel.send('', {
+                        files: ['https://media.giphy.com/media/QGzPdYCcBbbZm/giphy.gif']
+                    })
+                    setTimeout(() => {
+                        message.delete();
+                    }, 3000);
+                }
+            })
 
-        // for (let index of data) {
-        //     let ma = new RegExp(index, "i");
-        //     if (message.content.match(ma)) {
-        //         message.channel.send("Please be respectful or you might get banned");
-        //         setTimeout(() => {
-        //             message.delete();
-        //         }, 3000);
-        //     }
-        // }
-        // checks if the message from the bot itself
-        // } filter the messages
-        // } // filter the messages
+            for (let index of data) {
+                let ma = new RegExp(index, "i");
+                if (message.content.match(ma)) {
+                    message.channel.send("Please be respectful or you might get banned");
+                    setTimeout(() => {
+                        message.delete();
+                    }, 3000);
+                }
+            }
+        
+        }
     }
 });
 client.login(token);
