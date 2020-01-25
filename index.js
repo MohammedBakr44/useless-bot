@@ -115,6 +115,7 @@ client.on("message", message => {
             message.delete();
             message.channel.send(lenny);
         }
+
         //     if (message.content.match(ma)) {
         //         exampleEmbed.setColor('#bc0000');
         //         exampleEmbed.setDescription(`Use followning commands to add a lenny face`);
@@ -186,8 +187,9 @@ client.on("message", message => {
                     }, 3000);
                 }
             }
-        
+
         }
     }
 });
+
 client.login(token);
