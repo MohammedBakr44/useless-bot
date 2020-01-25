@@ -13,7 +13,7 @@ Create a wave for any member of your server.
 
 ## Let's get to the dirty stuff ( ͡° ͜ʖ ͡°)
 
-As described in da description the bot removes the rude word(or racist) just anything you don't want it to be present in your server. <br> English ↗.
+As described in da description the bot removes the rude word(or racist) just anything you have no desire to be present in your server. <br> English ↗.
 
 ### How?
 Using latest technology we can identify any word you add to the json file `wordList.json`.
